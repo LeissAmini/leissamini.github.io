@@ -1,9 +1,10 @@
 import './App.css';
 import me from './assets/me.jpg';
+import LOLStatTrackerPic from './assets/LOLStatTrackerPic.PNG';
+import NBALineupsPic from './assets/NBALineupsPic.png';
 import Contact from './components/Contact'
 import $ from 'jquery';
 import Project from './components/Project';
-import resume from './assets/2022Resume.pdf'
 function App() {
 
   //Dynamic Fixed Navigation Bar
@@ -46,7 +47,7 @@ function App() {
             <div className="row mt-4" data-aos="fade-up" data-aos-duration="3000">
               <div className="d-sm-flex col">
               <h1 className="fw-bold text-white m-0 pr-3 text-center">Hello, I'm</h1>
-                <h1 className=" fw-bold m-0 text-warning text-center">Ramon Amini.</h1>
+                <h1 className=" fw-bold m-0 text-warning text-center">Leiss Amini.</h1>
               </div>
             </div>
             <div className="row">
@@ -102,22 +103,22 @@ function App() {
           <div className="row" data-aos="zoom-out" data-aos-duration="1000" data-aos-delay="1500">
             <div className="col-xl p-5 m-2 bd-highlight d-flex flex-column justify-content-center align-items-center">
               <img src={me} width="300px" className="rounded" alt="A picture of me"></img>
-              <h2 className="font-weight-bold text-center pt-3">Who's Ramon?</h2>
-              <p className="text-center description">I was born and raised in Germany until I moved to California, Orange County in July of 2014. Fighting adversity and beating the odds, my family and I are still pursuing the American Dream. I am currently a Senior at the California State University Fullerton as a Computer Science Major. I'll be graduating after this Spring semester and I am looking for a Software Engineering role. I've built professional iOS applications, Websites, and Web Applications for customers in a Scrum based team environment.</p>
+              <h2 className="font-weight-bold text-center pt-3">Who's Leiss?</h2>
+              <p className="text-center description">I was born and raised in Germany until I moved to California, Orange County in July of 2014. Fighting adversity and beating the odds, my family and I are still pursuing the American Dream. I am currently a Junior at the California State University Fullerton as a Computer Science Major. </p>
             </div>
             <div className="col-xl d-flex flex-column bd-highlight justify-content-center w-100 deviceAdjustment" >
               
               <div className="progress progressHeight" >
                 <div className="progress-bar bg-info font-weight-bold w-15" role="progressbar" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100">Swift</div>
+                  aria-valuemin="0" aria-valuemax="100">C++</div>
                 <div className="progress-bar font-weight-bold text-right pr-5 w-75 progressFont" role="progressbar"
                   aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="500">90%</div>
               </div>
               <div className="progress mt-4 progressHeight" >
                 <div className="progress-bar bg-info font-weight-bold w-15" role="progressbar" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100">C++</div>
-                <div className="progress-bar font-weight-bold text-right pr-5 w-75 progressFont" role="progressbar"
-                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">90%</div>
+                  aria-valuemin="0" aria-valuemax="100">Swift</div>
+                <div className="progress-bar font-weight-bold text-right pr-5 w-65 progressFont" role="progressbar"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">80%</div>
               </div>
               <div className="progress mt-4 progressHeight" >
                 <div className="progress-bar bg-info font-weight-bold w-15" role="progressbar" aria-valuenow="25"
@@ -198,35 +199,27 @@ function App() {
           <ol className="carousel-indicators mt-5">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <Project title="Dari Learner - iOS" pageLink="https://darilearner.com/" videoLink="https://www.youtube.com/embed/C4jrGsz_XH4" 
-              infoTitle="Want to Learn some Dari?" 
-              infoText="Learn Dari in an exciting educational way. Think of it as the Quizlet of Dari. Dari Learner is a fun, free way of becoming fluent in Dari. Dari Learner makes learning Dari easy, effective, and above all, fun. With tools such as Flashcards and Quizzes, it allows you to build a strong speaking and listening foundation. By tracking your progress, Dari Learner helps you realize how much you have learned while receiving achievements that make practicing a daily habit." 
+              <Project 
+            
+            title={<span style={{color: "#00BFFF"  }}>LOL Stat Tracker</span>}
+              imgSrc={LOLStatTrackerPic}
+              infoTitle="About" 
+              infoText="LOL Stat Tracker is the ultimate companion for League of Legends players. It provides detailed, up-to-date statistics for every champion, including win rates, pick rates, ban rates, and more. Whether you’re a casual player or aiming for competitive play, LOL Stat Tracker helps you make smarter decisions and adapt to the ever-changing meta. With its intuitive interface and comprehensive data, it’s designed to keep you informed, engaged, and ahead of the competition." 
               infoSecondTitle="Technology" 
-              infoSecondText="Dari Learner is a SwiftUI based application that truly utilizes its declarative concept allowing its UI to shine. It utilizes Firebase for Authentication, Storage as well as AdMob. Finally, Dari Learner has it's own API that is uses to retrieve its Vocabulary. The API is built using Flask and is hosted by Heroku."/>
+              infoSecondText="LOL Stat Tracker is powered by React, JavaScript, HTML, and CSS, offering a sleek, responsive design optimized for all devices. A custom web scraper built with Puppeteer ensures real-time updates of champion statistics, providing players with the latest information. Backed by Node.js, the platform delivers reliable performance and seamless interaction, making it an essential tool for League of Legends enthusiasts."/>
             </div>
             <div className="carousel-item">
-            <Project title="MusoLive Mux Integration - React" pageLink="https://github.com/Farnam0/stream-mux-api" videoLink="https://www.youtube.com/embed/hv7DdIy-ZbA" 
+              
+            <Project 
+             title={<span style={{color: "#00BFFF"  }}>NBA Lineups</span>}
+            imgSrc={NBALineupsPic}
             infoTitle="About" 
-            infoText="MusoLive is an interactive platform for fans to interact with musicians. For my Capstone Project, we created a React based Web Application for this Company that Utilizes Mux for its Streaming and Video Playback functionality. The app allows the user to trim and save video clips at will. For this, we use the Mux API to store and process videos." 
+            infoText="NBA Lineups is your ultimate companion for staying updated on NBA games. It provides real-time information on matchups, starting lineups, team records, and game locations, all in one sleek app. Whether you’re a casual fan or a die-hard basketball enthusiast, NBA Lineups ensures you’re always in the know, making it an essential tool for following the action." 
             infoSecondTitle="Technology" 
-            infoSecondText="Our Web Application uses ReactJS as its Front End framework which allowed us to soley focus on Figuring out the Mux API and integrating it into our Application. We are using NodeJS, allowing us to use the Official Mux API wrapper, making it a breeze for us to implement."/>
-            </div>
-            <div className="carousel-item">
-            <Project title="MealPickr - Kotlin" pageLink="https://github.com/CSUF-CPSC411-2021F/group-project-team-hypervisor" videoLink="https://youtube.com/embed/dqSXcmuTBd0" 
-            infoTitle="What is MealPickr?" 
-            infoText="MealPickr is a mobile android application that helps those who cannot find a place to eat. It will take the user’s current location and pick a random restaurant within a given range of the users choice." 
-                    infoSecondTitle="Technology" 
-                    infoSecondText="MealPickr is a Kotlin based application which utilizes the Maps SDK. It receives it's data straight from the Yelp API."/>
-            </div>
-            <div className="carousel-item">
-            <Project title="The Mudkips - QT" pageLink="https://github.com/raaamonnn/TheMudkips" videoLink="https://youtube.com/embed/dedLbTl9RD0" 
-            infoTitle="About" 
-            infoText="The Mudkips is my final group project for my Datastructures class. As the Scrum Master, it was my resposibility to facilitate scrum to the team by ensuring the scrum framework is followed. The Application's main objective was it to utilize datastructures such as a ordered map as well as efficient algorithms like  the A* algorithm to find  the shortest vacation trip and Kruskal's algorithm to find the minimum spanning tree." />
+            infoSecondText="NBA Lineups is built using SwiftUI, delivering a clean and responsive user experience on iOS devices. The app leverages a powerful API to provide accurate, up-to-date information on NBA games, including lineups and team stats. With its seamless design and real-time updates, NBA Lineups is crafted to keep basketball fans engaged and informed."/>
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -248,7 +241,6 @@ function App() {
                 <li>Video Games</li>
                 <li>Waterpolo</li>
                 <li>Soccer</li>
-                <li>Surfing</li>
               </ul>
               <p className="text-center mb-5">If you couldn't already tell, I Love Sports!</p>
           </div>
@@ -285,32 +277,9 @@ function App() {
             <i class="fas fa-arrow-up text-light"></i>
           </div>
         </a>
-
-        <div class="row">
-          <a href="https://www.linkedin.com/in/ramon-amini/" target="_blank" rel="noopener noreferrer">
-            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-2">
-              <i class="fab fa-linkedin-in text-light"></i>
-            </div>
-          </a>
-          <a href={resume} download="RamonAminiResume" target="_blank" rel="noopener noreferrer">
-            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-3">
-              <i class="fal fa-file-user text-light"></i>
-            </div>
-          </a>
-          <a href="https://instagram.com/ramon_amini/" target="_blank" rel="noopener noreferrer">
-            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-4">
-              <i class="fab fa-instagram text-light"></i>
-            </div>
-          </a>
-          <a href="http://github.com/raaamonnn/" target="_blank" rel="noopener noreferrer">
-            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-5">
-              <i class="fab fa-github text-light"></i>
-            </div>
-          </a>
-        </div>
         <div class="info-box">
           <div class="footnote">
-            RAMON AMINI <span class="highlight">©2021</span>
+            LEISS AMINI <span class="highlight">©2024</span>
           </div>
         </div>
       </footer>

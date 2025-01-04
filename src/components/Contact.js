@@ -1,7 +1,7 @@
 import emailjs from 'emailjs-com'
 import { init } from 'emailjs-com';
 import React, { useState } from 'react'
-init("user_6zjWRKDpnvozhHSff7rNn");
+init("6c70mI3NgGyfZDlAG");
 const Contact = () => {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -9,8 +9,8 @@ const Contact = () => {
     
     const submit = () => {
         if (name && email && message && isValidEmail()) {
-            const serviceId = 'service_hyjzrtr';
-            const templateId = 'template_8m99vwl';
+            const serviceId = 'service_hsqmqln';
+            const templateId = 'template_1dknjeh';
             const templateParams = {
                 name,
                 email,
