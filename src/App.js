@@ -241,6 +241,7 @@ function App() {
                 <li>Video Games</li>
                 <li>Waterpolo</li>
                 <li>Soccer</li>
+                <li>Basketball</li>
               </ul>
               <p className="text-center mb-5">If you couldn't already tell, I Love Sports!</p>
           </div>
