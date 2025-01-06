@@ -83,9 +83,6 @@ function App() {
               <li className="nav-item">
                 <a className="nav-link" href="#contact">CONTACT</a>
               </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#links">LINKS</a>
-              </li>
             </ul>
           </div>
         </nav>
