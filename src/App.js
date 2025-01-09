@@ -274,7 +274,24 @@ function App() {
           <div class="icon d-flex flex-column justify-content-center align-items-center upArrowIcon" id="icon-1">
             <i class="fas fa-arrow-up text-light"></i>
           </div>
-        </a>
+          </a>
+          <div class="row">
+          <a href="https://www.linkedin.com/in/leiss-amini-b611662ab/" target="_blank" rel="noopener noreferrer">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-2">
+              <i class="fab fa-linkedin-in text-light"></i>
+            </div>
+          </a>
+          <a href="https://instagram.com/leiss_amini/" target="_blank" rel="noopener noreferrer">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-4">
+              <i class="fab fa-instagram text-light"></i>
+            </div>
+          </a>
+          <a href="https://github.com/LeissAmini" target="_blank" rel="noopener noreferrer">
+            <div class="icon d-flex flex-column justify-content-center align-items-center" id="icon-5">
+              <i class="fab fa-github text-light"></i>
+            </div>
+          </a>
+        </div>
         <div class="info-box">
           <div class="footnote">
             LEISS AMINI <span class="highlight">©2024</span>
